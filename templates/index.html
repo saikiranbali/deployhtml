@@ -1,117 +1,173 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" >
 <head>
-    <title>Flask Table</title>
+  <meta charset="UTF-8">
+  <title>CodePen - Data Table</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel= "stylesheet" type= "text/css" href= "/static/style.css">
+
 </head>
 <body>
-   
-    <h1 style="text-align: center;">Banglore</h1>
-    <table border="1" style="border:1px solid black;margin-left:auto;margin-right:auto;">
-        <tr>
-            <th>warehouse name</th>
-            <th>varient id</th>
-            <th>sku</th>
-            <th>varient name</th>
-            <th>price amount</th>
-            <th>cost price</th>
-            <th>quantity</th>
-            <th>published status</th>
-        </tr>
-        {% for row in data %}
-        <tr>
-            <td>{{ row[0] }}</td>   
-            <td>{{ row[1] }}</td>
-            <td>{{ row[2] }}</td>
-            <td>{{ row[3] }}</td>
-            <td>{{ row[4] }}</td>
-            <td>{{ row[5] }}</td>
-            <td>{{ row[6] }}</td>
-            <td>{{ row[8] }}</td>
+<!-- partial:index.partial.html -->
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Banglore</title>
+	<meta name="viewport" content="initial-scale=1.0; maximum-scale=1.0; width=device-width;">
+</head>
+
+<body>
+<div class="table-title">
+<h3>Banglore</h3>
+</div>
+<table class="table-fill">
+<thead>
+<tr>
+  <th class="text-left">warehouse name</th>
+  <th class="text-left">varient id</th>
+  <th class="text-left">sku</th>
+  <th class="text-left">varient name</th>
+  <th class="text-left">price amount</th>
+  <th class="text-left">cost price</th>
+  <th class="text-left">quantity</th>
+  <th class="text-left">published status</th>
+</tr>
+</thead>
+<tbody class="table-hover">
+
+  {% for row in data %}
+  <tr>
+      <td class="text-left">{{ row[0] }}</td>   
+      <td class="text-left"> {{ row[1] }}</td>
+      <td class="text-left">{{ row[2] }}</td>
+      <td class="text-left">{{ row[3] }}</td>
+      <td class="text-left">{{ row[4] }}</td>
+      <td class="text-left">{{ row[5] }}</td>
+      <td class="text-left">{{ row[6] }}</td>
+      <td class="text-left">{{ row[8] }}</td>
+  </tr>
+  {% endfor %}
 
 
-        </tr>
-        {% endfor %}
+
+</tbody>
+</table>
+<div class="table-title">
+    <h3>Mumbai</h3>
+    </div>
+<!-- new -->
+<table class="table-fill">
+    <thead>
+    <tr>
+      <th class="text-left">warehouse name</th>
+      <th class="text-left">varient id</th>
+      <th class="text-left">sku</th>
+      <th class="text-left">varient name</th>
+      <th class="text-left">price amount</th>
+      <th class="text-left">cost price</th>
+      <th class="text-left">quantity</th>
+      <th class="text-left">published status</th>
+    </tr>
+    </thead>
+    <tbody class="table-hover">
+    
+      {% for row in data1 %}
+      <tr>
+          <td class="text-left">{{ row[0] }}</td>   
+          <td class="text-left"> {{ row[1] }}</td>
+          <td class="text-left">{{ row[2] }}</td>
+          <td class="text-left">{{ row[3] }}</td>
+          <td class="text-left">{{ row[4] }}</td>
+          <td class="text-left">{{ row[5] }}</td>
+          <td class="text-left">{{ row[6] }}</td>
+          <td class="text-left">{{ row[8] }}</td>
+      </tr>
+      {% endfor %}
+    
+    
+    
+    </tbody>
     </table>
-    <h1 style="text-align: center;">Mumbai</h1>
-    <table border="1" style="border:1px solid black;margin-left:auto;margin-right:auto;">
-        <tr>
-            <th>warehouse name</th>
-            <th>varient id</th>
-            <th>sku</th>
-            <th>varient name</th>
-            <th>price amount</th>
-            <th>cost price</th>
-            <th>quantity</th>
-            <th>published status</th>
-        </tr>
-        {% for row in data1 %}
-        <tr>
-            <td>{{ row[0] }}</td>   
-            <td>{{ row[1] }}</td>
-            <td>{{ row[2] }}</td>
-            <td>{{ row[3] }}</td>
-            <td>{{ row[4] }}</td>
-            <td>{{ row[5] }}</td>
-            <td>{{ row[6] }}</td>
-            <td>{{ row[8] }}</td>
+  
 
-
-        </tr>
-        {% endfor %}
+    <div class="table-title">
+        <h3>Hyderabad</h3>
+        </div>
+<!-- new -->
+<table class="table-fill">
+    <thead>
+    <tr>
+      <th class="text-left">warehouse name</th>
+      <th class="text-left">varient id</th>
+      <th class="text-left">sku</th>
+      <th class="text-left">varient name</th>
+      <th class="text-left">price amount</th>
+      <th class="text-left">cost price</th>
+      <th class="text-left">quantity</th>
+      <th class="text-left">published status</th>
+    </tr>
+    </thead>
+    <tbody class="table-hover">
+    
+      {% for row in data2 %}
+      <tr>
+          <td class="text-left">{{ row[0] }}</td>   
+          <td class="text-left"> {{ row[1] }}</td>
+          <td class="text-left">{{ row[2] }}</td>
+          <td class="text-left">{{ row[3] }}</td>
+          <td class="text-left">{{ row[4] }}</td>
+          <td class="text-left">{{ row[5] }}</td>
+          <td class="text-left">{{ row[6] }}</td>
+          <td class="text-left">{{ row[8] }}</td>
+      </tr>
+      {% endfor %}
+    
+    
+    
+    </tbody>
     </table>
-    <h1 style="text-align: center;"> Hyderabad</h1>
-    <table border="1" style="border:1px solid black;margin-left:auto;margin-right:auto;">
-        <tr>
-            <th>warehouse name</th>
-            <th>varient id</th>
-            <th>sku</th>
-            <th>varient name</th>
-            <th>price amount</th>
-            <th>cost price</th>
-            <th>quantity</th>
-            <th>published status</th>
-        </tr>
-        {% for row in data2 %}
-        <tr>
-            <td>{{ row[0] }}</td>   
-            <td>{{ row[1] }}</td>
-            <td>{{ row[2] }}</td>
-            <td>{{ row[3] }}</td>
-            <td>{{ row[4] }}</td>
-            <td>{{ row[5] }}</td>
-            <td>{{ row[6] }}</td>
-            <td>{{ row[8] }}</td>
 
 
-        </tr>
-        {% endfor %}
+
+    <div class="table-title">
+        <h3>Chennai</h3>
+        </div>
+<!-- new -->
+<table class="table-fill">
+    <thead>
+    <tr>
+      <th class="text-left">warehouse name</th>
+      <th class="text-left">varient id</th>
+      <th class="text-left">sku</th>
+      <th class="text-left">varient name</th>
+      <th class="text-left">price amount</th>
+      <th class="text-left">cost price</th>
+      <th class="text-left">quantity</th>
+      <th class="text-left">published status</th>
+    </tr>
+    </thead>
+    <tbody class="table-hover">
+    
+      {% for row in data3 %}
+      <tr>
+          <td class="text-left">{{ row[0] }}</td>   
+          <td class="text-left"> {{ row[1] }}</td>
+          <td class="text-left">{{ row[2] }}</td>
+          <td class="text-left">{{ row[3] }}</td>
+          <td class="text-left">{{ row[4] }}</td>
+          <td class="text-left">{{ row[5] }}</td>
+          <td class="text-left">{{ row[6] }}</td>
+          <td class="text-left">{{ row[8] }}</td>
+      </tr>
+      {% endfor %}
+    
+    
+    
+    </tbody>
     </table>
-    <h1 style="text-align: center;">Chennai</h1>
-    <table border="1" style="border:1px solid black;margin-left:auto;margin-right:auto;">
-        <tr>
-            <th>warehouse name</th>
-            <th>varient id</th>
-            <th>sku</th>
-            <th>varient name</th>
-            <th>price amount</th>
-            <th>cost price</th>
-            <th>quantity</th>
-            <th>published status</th>
-        </tr>
-        {% for row in data3 %}
-        <tr>
-            <td>{{ row[0] }}</td>   
-            <td>{{ row[1] }}</td>
-            <td>{{ row[2] }}</td>
-            <td>{{ row[3] }}</td>
-            <td>{{ row[4] }}</td>
-            <td>{{ row[5] }}</td>
-            <td>{{ row[6] }}</td>
-            <td>{{ row[8] }}</td>
 
-
-        </tr>
-        {% endfor %}
-    </table>
+  </body>
+<!-- partial -->
+  
 </body>
 </html>
