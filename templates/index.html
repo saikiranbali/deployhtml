@@ -4,7 +4,9 @@
     <title>Flask Table</title>
 </head>
 <body>
-    <table border="1">
+   
+    <h1 style="text-align: center;">Banglore</h1>
+    <table border="1" style="border:1px solid black;margin-left:auto;margin-right:auto;">
         <tr>
             <th>warehouse name</th>
             <th>varient id</th>
@@ -16,6 +18,87 @@
             <th>published status</th>
         </tr>
         {% for row in data %}
+        <tr>
+            <td>{{ row[0] }}</td>   
+            <td>{{ row[1] }}</td>
+            <td>{{ row[2] }}</td>
+            <td>{{ row[3] }}</td>
+            <td>{{ row[4] }}</td>
+            <td>{{ row[5] }}</td>
+            <td>{{ row[6] }}</td>
+            <td>{{ row[8] }}</td>
+
+
+        </tr>
+        {% endfor %}
+    </table>
+    <h1 style="text-align: center;">Mumbai</h1>
+    <table border="1" style="border:1px solid black;margin-left:auto;margin-right:auto;">
+        <tr>
+            <th>warehouse name</th>
+            <th>varient id</th>
+            <th>sku</th>
+            <th>varient name</th>
+            <th>price amount</th>
+            <th>cost price</th>
+            <th>quantity</th>
+            <th>published status</th>
+        </tr>
+        {% for row in data1 %}
+        <tr>
+            <td>{{ row[0] }}</td>   
+            <td>{{ row[1] }}</td>
+            <td>{{ row[2] }}</td>
+            <td>{{ row[3] }}</td>
+            <td>{{ row[4] }}</td>
+            <td>{{ row[5] }}</td>
+            <td>{{ row[6] }}</td>
+            <td>{{ row[8] }}</td>
+
+
+        </tr>
+        {% endfor %}
+    </table>
+    <h1 style="text-align: center;"> Hyderabad</h1>
+    <table border="1" style="border:1px solid black;margin-left:auto;margin-right:auto;">
+        <tr>
+            <th>warehouse name</th>
+            <th>varient id</th>
+            <th>sku</th>
+            <th>varient name</th>
+            <th>price amount</th>
+            <th>cost price</th>
+            <th>quantity</th>
+            <th>published status</th>
+        </tr>
+        {% for row in data2 %}
+        <tr>
+            <td>{{ row[0] }}</td>   
+            <td>{{ row[1] }}</td>
+            <td>{{ row[2] }}</td>
+            <td>{{ row[3] }}</td>
+            <td>{{ row[4] }}</td>
+            <td>{{ row[5] }}</td>
+            <td>{{ row[6] }}</td>
+            <td>{{ row[8] }}</td>
+
+
+        </tr>
+        {% endfor %}
+    </table>
+    <h1 style="text-align: center;">Chennai</h1>
+    <table border="1" style="border:1px solid black;margin-left:auto;margin-right:auto;">
+        <tr>
+            <th>warehouse name</th>
+            <th>varient id</th>
+            <th>sku</th>
+            <th>varient name</th>
+            <th>price amount</th>
+            <th>cost price</th>
+            <th>quantity</th>
+            <th>published status</th>
+        </tr>
+        {% for row in data3 %}
         <tr>
             <td>{{ row[0] }}</td>   
             <td>{{ row[1] }}</td>
